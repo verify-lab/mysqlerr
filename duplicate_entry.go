@@ -40,7 +40,7 @@ func CastToDuplicateEntryError(err error) (*DuplicateEntryError, bool) {
 		return nil, false
 	}
 
-	if mErr.Number != ErrDupEntry && mErr.Number != ErrDupEntryWithKeyName {
+	if mErr.Number != ErrDupEntry {
 		return nil, false
 	}
 
