@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           go get .
-          go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.46.2
+          go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.52.2
       - name: Lint
         run: golangci-lint run -v --fix
       - name: Tests
